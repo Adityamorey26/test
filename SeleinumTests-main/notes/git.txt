@@ -1,0 +1,35 @@
+# Initialize repo
+git init
+
+# Add files
+git add .
+
+# Commit changes
+git commit -m "Initial commit"
+
+# Set main branch
+git branch -M main
+
+# Add remote repo
+git remote add origin https://github.com/USERNAME/REPO.git
+
+# Push to GitHub
+git push -u origin main
+
+# Check status
+git status
+
+# View commit history
+git log
+
+# Create branch
+git checkout -b feature-branch
+
+# Switch branch
+git checkout main
+
+# Merge branch
+git merge feature-branch
+
+# Revert commit
+git revert <commit-id>

@@ -1,0 +1,12 @@
+# Run Flask app
+python app.py
+
+# Run Selenium test
+python test_flask.py
+python test_js.py
+
+# Install Selenium
+pip install selenium
+
+# Chrome driver check
+chrome://version

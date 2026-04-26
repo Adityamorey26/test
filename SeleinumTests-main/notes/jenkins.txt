@@ -1,0 +1,29 @@
+1. Open Jenkins → http://localhost:8080
+
+2. Create New Item
+   → Freestyle Project OR Pipeline
+
+3. Configure GitHub repo
+   → Add repository URL
+
+4. Configure build steps
+   → Execute Windows batch command:
+     docker build -t flask-app -f docker/Dockerfile .
+     docker run -d -p 5000:5000 flask-app
+
+5. For Pipeline:
+   → Add stages:
+     - Checkout
+     - Build
+     - Test
+     - Deploy
+
+6. Click "Build Now"
+
+7. Check Console Output
+
+8. Verify app:
+   → http://localhost:5000
+
+9. java -jar jenkins.war
+10. java -jar jenkins.war --httpPort=9090
